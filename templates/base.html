@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+
+        {% endblock title %}</title>
+    <style>
+        @media screen and (max-width: 600px) {
+
+
+            .footerLinks {
+                flex-direction: column;
+                /* text-align: center; */
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0px; font-family: Inter, sans-serif; background: #46586B0A;">
+    <div style="padding:32px;box-sizing: content-box;">
+        <div>
+            <div class="container"
+                style="background: #FFFFFF; border-radius: 5px;height: fit-content; padding:40px;">
+                <div>
+                    <span><img src="https://img.freepik.com/free-psd/engraved-black-logo-mockup_125540-223.jpg" alt="logo" style="width: 50px; height: 50px;"></span>
+                </div>
+                <p>Hi,</p>
+                <h3>We wanted to let you know that email has been sent successfully!</h3>
+            </div>
+        </div>
+        <div style=" text-align: center; align-items: center; justify-content: center; margin-top:32px">
+            <div style="text-align: center;display: -webkit-inline-box;">
+                <div style="font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; color: #00000099;padding-top: 7px;">Powered by</div>
+                <span>
+                    <img style="width: 30px; height: 20px; padding: 3.71px 4.95px 3.71px 4.95px;" src="https://img.freepik.com/free-psd/engraved-black-logo-mockup_125540-223.jpg"
+                        alt="logo">
+                </span>
+            </div>
+            <p class="footerLinks" style="text-align: center; font-family: Inter, sans-serif; font-size: 12px; margin-top: 16px; font-weight: 400; color: #00000099;">
+                Too many emails?
+                <span style="font-size: 12px; font-family: Inter, sans-serif; font-weight: bold; color: #46586B;">
+                    <a href="{{preference}}" style="font-size: 13px; font-family: Inter, sans-serif; font-weight: bold; color: #46586B; text-decoration: none; margin-left: 4px; margin-right: 4px;">Manage email notifications</a>
+                </span>
+            </p>
+            <div style="margin-top: 20px;  justify-content:center; align-items:center">
+                <a href="{{Support}}"
+                    style="font-size: 13px; font-weight: 600; color: #4729FF; text-decoration: none; margin-right: 10px;">Terms</a>
+                <span style="height: 12px; width: 1px; background-color: #0000001F; display: inline-block;"></span>
+                <a href="{{Privacy}}"
+                    style="font-size: 13px; font-weight: 600; color: #4729FF; text-decoration: none; margin-left: 10px;">Privacy</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
